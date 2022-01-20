@@ -92,7 +92,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .header__hero {
-  background-image: url(assets/images/image-banner.png);
+  background-image: url(../images/image-banner.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
