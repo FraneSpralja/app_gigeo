@@ -1,0 +1,68 @@
+.header {
+    width: 100%;
+}
+
+.header__hero {
+    background-image: url(/assets/images/image-banner.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 45vh;
+    @include breakpoint('sms'){
+        height: 15vh;
+    }
+}
+
+.header__profile {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 2em 3em;
+    border-bottom: 1px solid #e9ece8;
+}
+
+.profile__author {
+    display: flex;
+    flex-flow: row wrap;
+    @include breakpoint('sms'){
+        text-align: center;
+    }
+}
+
+.img_author {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    @include breakpoint('sms'){
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 1em;
+    }
+}
+
+.text__author {
+    margin: auto 1em;
+    @include breakpoint('sms'){
+        margin: auto;
+    }
+}
+
+.author__name {
+    font-size: $large;
+    font-weight: $font-black;
+}
+
+.author__info {
+    font-size: $normal;
+}
+
+.profile__buttons {
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+    flex-flow: row nowrap;
+    column-gap: 1em;
+    @include breakpoint('sms'){
+        display: none;
+    }
+}

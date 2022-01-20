@@ -1,0 +1,6 @@
+//RESPONSIVE
+@mixin breakpoint($point) {
+    @if $point == sms {
+        @media (max-width: 490px) { @content ; }
+    }
+}

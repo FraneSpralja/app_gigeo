@@ -1,0 +1,55 @@
+.nav {
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 1em 3em;
+}
+
+.nav__brand {
+    display: flex;
+    flex-flow: column nowrap;
+    row-gap: 0;
+}
+
+.brand-gigeo {
+    font-size: $xxx-large;
+    font-weight: $font-bold;
+}
+
+.brand-art {
+    text-align: right;
+    margin-bottom: -10px;
+}
+
+.nav__block {
+    margin-left: auto;
+}
+
+.nav__list {
+    list-style-type: none;
+    @include breakpoint('sms'){
+        display: none;
+    }
+}
+
+.list__item {
+    float: left;
+    padding: 1em;
+}
+
+.item__anchor {
+    font-size: $large;
+    color: $black;
+}
+
+.item__anchor.gray {
+    color: $gray;
+}
+
+.burguer-toggle {
+    display: none;
+    @include breakpoint('sms') {
+        display: block;
+        margin-bottom: auto;
+        margin-top: auto;
+    }
+}
